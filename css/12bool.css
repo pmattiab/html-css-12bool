@@ -1,12 +1,12 @@
 /* DEBUG */
 
-.debug .container {
+.container {
     height: 200px;
     background-color: green;
 }
 
 .debug [class*="col-"] {
-    height: 200px;
+    height: 100%;
     background-color: pink;
     border: 1px solid black;
 }

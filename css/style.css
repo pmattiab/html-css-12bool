@@ -1,10 +1,24 @@
+/* col- dentro container */
 .container [class*="col-"] {
     position: relative;
+    padding: 5px;
 }
 
+/* container dentro col- figlio di container */
+.container > [class*="col-"] .container {
+    height: 100%;
+}
+
+/* span dentro col- dentro container */
 .container [class*="col-"] span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* col- figlio di container dentro col- figlio container */
+.container > [class*="col-"] .container > [class*="col-"] {
+    background-color: lightcoral;
+    border: 1px solid white;
 }
